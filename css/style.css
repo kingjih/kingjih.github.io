@@ -56,7 +56,7 @@
 	/* Section 0
 	* ----------
 ---------------------- */
-	#section0{
+	#homepage{
 		padding: 20px 0;
         background: url(../imgs/homepage.png) no-repeat center center fixed; 
       -webkit-background-size: cover;
