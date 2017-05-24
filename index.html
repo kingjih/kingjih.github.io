@@ -8,11 +8,8 @@
 	<meta name="description" content="fullPage demo easing effect." />
 	<meta name="keywords"  content="fullpage,jquery,demo,easing,effect,jqueui" />
 	<meta name="Resource-type" content="Document" />
-    
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="css/examples.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 
 	<!--[if IE]>
@@ -24,9 +21,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-	<script type="text/javascript" src="../vendors/scrolloverflow.js"></script>
+	<script type="text/javascript" src="js/scrolloverflow.js"></script>
 
-	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
 	<script type="text/javascript" src="js/examples.js"></script>
 
 </head>
@@ -34,21 +31,21 @@
 <!--['homepage', 'intro', 'compare', 'AC', 'DC','Q&A'],-->
 <ul id="menu">
     <li ><a href="http://www.kingjih.com">官方網站</a></li>
-    <li data-menuanchor="secondPage"><a href="#intro">特別優勢</a></li>
-	<li data-menuanchor="3rdPage"><a href="#compare">ＤＣ / ＡＣ比較</a></li>
-	<li data-menuanchor="4thpage"><a href="#AC">型號介紹</a></li>
-	<li data-menuanchor="4thpage"><a href="#DC">型號介紹</a></li>
-	<li data-menuanchor="lastPage"><a href="#Q&A">Ｑ＆Ａ</a></li>
+    <li data-menuanchor="second" class="active"><a href="#intro">特別優勢</a></li>
+	<li data-menuanchor="3th"><a href="#compare">ＤＣ / ＡＣ比較</a></li>
+	<li data-menuanchor="4th"><a href="#AC">型號介紹</a></li>
+	<li data-menuanchor="5th"><a href="#DC">型號介紹</a></li>
+	<li data-menuanchor="last"><a href="#Q&A">Ｑ＆Ａ</a></li>
 </ul>
 
 <div id="fullpage">
 <!--homepage-->
-		<div class="section " id="homepage">
+		<div class="section " id="section0">
 
 	</div>
 
 <!--intro-->
-   <div class="section" id="intro">
+   <div class="section" id="section1">
 		<div class="intro">
 		    <h1>特別優勢</h1>
 			<p>This example is working with `easeOutBack` effect instead of the default</p>
@@ -56,7 +53,7 @@
 		</div>
 	</div>
 <!--AC DC compare-->
-	<div class="section" id="compare">
+	<div class="section" id="section2">
 		<div class="intro">
 		    <img src="imgs/logo.png" class="mainImg" alt="">
 			<h1>ＤＣ ＡＣ介紹</h1>
@@ -66,29 +63,28 @@
     
 
 <!--Compare-->
-    <div class="section" id="AC">
+    <div class="section" id="section3">
 		<div class="intro">
 			<h1>型號介紹</h1>
 			<p>Choose the best easing effect for your site!</p>
 		</div>
 	</div>
 <!--Q&A-->
-    <div class="section" id="DC">
+    <div class="section" id="section4">
 		<div class="intro">
 			<h1>Cool uh?</h1>
 			<p>Choose the best easing effect for your site!</p>
 		</div>
 	</div>
 <!--	-->
-<div class="section" id="Q&A">
+<div class="section" id="section5">
 		<div class="intro">
 			<h1>常見Q & A </h1>
 			<p>有問題請撥打 04-2537-9612  </p>
 			<p><div class="fb-page" data-href="https://www.facebook.com/kingjihfans/" data-tabs="timeline" data-width="500" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/kingjihfans/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/kingjihfans/">中央牌家電</a></blockquote></div>/</p>
 		</div>
 	</div>
-<!---->
-</div> 
+    </div>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -98,6 +94,8 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-
+<!--    fontawesome-->
+   <script src="https://use.fontawesome.com/fb787c5a10.js"></script>
+   
 </body>
 </html>

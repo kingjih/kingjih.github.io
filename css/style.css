@@ -1,3 +1,121 @@
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:black;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: arial,helvetica;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	position: relative;
+}
+h1{
+	font-size: 6em;
+}
+p{
+	font-size: 2em;
+}
+.intro p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+.section{
+	text-align:center;
+}
+#menu li {
+  
+	display:inline-block;
+	margin: 5px;
+	background-color:#ccc;
+	
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+    
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 70px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+
+
 
 
 	body{
@@ -56,7 +174,7 @@
 	/* Section 0
 	* ----------
 ---------------------- */
-	#homepage{
+	#section0{
 		padding: 20px 0;
         background: url(../imgs/homepage.png) no-repeat center center fixed; 
       -webkit-background-size: cover;
@@ -65,211 +183,14 @@
       background-size: cover;
 
 	}
-.homeImg{
-    
-    
-}
-	#section0 img{
-		height: 90%;
-		margin: 40px 0 0 0;
-	}
+
     .home-logo{
     position: relative;
     }
     
 
 
-	/* Section 1
-	* --------------------------------------- */
-	#section1 img{
-		position:absolute;
-		left: 40px;
-		top: 100px;
-	}
-
-	#section1 .box{
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		margin-top: -192px;
-		margin-left: 89px;
-		width: 395px;
-		z-index: 1;
-	}
-	#section1 .imgsContainer{
-		display: block;
-		position: absolute;
-		z-index: 1;
-		top: 42%;
-		left: 58%;
-		margin-top: -325px;
-		margin-left: -747px;
-		width: 800px;
-		height: 696px;
-	}
-	#section1 img{
-		height: 100%;
-	}
-	/*screen resolutions between 620px and 800px*/
-	@media all and (min-width: 620px) and (max-width: 800px){
-		#section1 .imgsContainer{
-			margin-top: -278px;
-			margin-left: -685px;
-			width: 647px;
-			height: 563px;
-		}
-	}
-
-	/*screen resolutions lower than 620px*/
-	@media all and (max-width: 620px){
-		#section1 .imgsContainer{
-			margin-top: -208px;
-			margin-left: -516px;
-			width: 534px;
-			height: 464px;
-		}
-	}
-
-	/* Section 2
-	* --------------------------------------- */
-	#section2 .imgsContainer,
-	#staticImg .imgsContainer,
-	#section3 .imgsContainer{
-		position: absolute;
-		z-index: 1;
-		left: 50%;
-		display: block;
-		margin-top: -288px;
-		margin-left: -636px;
-		width: 0;
-		height: 0;
-
-		-webkit-transition: all 1.2s ease-in-out;
-		-moz-transition: all 1.2s ease-in-out;
-		-o-transition: all 1.2s ease-in-out;
-		transition: all 1.2s ease-in-out;
-	}
-
-	#section2.moveUp .imgsContainer{
-		top: 50%;
-	}
-
-	#section2.moveDown .imgsContainer,
-	#staticImg .imgsContainer{
-		top: 90%;
-	}
-
-	#section2.active .imgsContainer{
-		top: 50%;
-	}
-
-	#section2 .box{
-		top: 22%;
-		left: 42%;
-		position: absolute;
-		width: 582px;
-	}
-
-	#iphone-yellow{
-		top: -35px;
-		left: -222px;
-	}
-
-	#iphone-red{
-		top: -194px;
-		left: 106px;
-	}
-
-	#iphone-blue{
-		top: 320px;
-		left: 448px;
-	}
-
-	#iphone-green{
-		left: 106px;
-		position:absolute;
-	}
-
-	#staticImg{
-		display: block;
-		position: absolute;
-		z-index: 1;
-		top: 200%;
-		left: 0;
-		width: 100%;
-		min-width: 980px;
-		height: 100%;
-
-		-webkit-transition: all 0.7s ease-out;
-		-moz-transition: all 0.7s ease-out;
-		-o-transition: all 0.7s ease-out;
-		transition: all 0.7s ease-out;
-
-		-webkit-backface-visibility: hidden;
-		-webkit-perspective: 1000;
-	}
-	#staticImg.moveDown{
-	-webkit-transform: translate3d(0, 100%, 0);
-      -ms-transform: translate3d(0, 100%, 0);
-          transform: translate3d(0, 100%, 0);
-	}
-	#staticImg.moveUp{
-
-	-webkit-transform: translate3d(0, 0, 0);
-      -ms-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-	}
-	#staticImg.moveDown .imgsContainer{
-			top: 50%;
-	}
-	#staticImg.moveDown img{
-		top: 155px;
-	}
-
-	#staticImg.active .imgsContainer{
-		top: 50%;
-	}
-
-
-	#staticImg.active img{
-		top: 487px;
-	}
-
-
-
-
-
-	/* Section 3
-	* --------------------------------------- */
-	#section3 .imgsContainer{
-		top: 50%;
-	}
-
-	#section3 img{
-		top: 155px;
-		left: 455px;
-		position: absolute;
-	}
-	#section3 .box{
-		text-align: center;
-		margin: 10% 0 0 0;
-	}
-
-
-
-	/* Overwriting fullPage.js tooltip color
-	* --------------------------------------- */
-	.fp-tooltip{
-		color: #AAA;
-	}
-	#fp-nav span, .fp-slidesNav span{
-		border-color: #AAA;
-	}
-	#fp-nav li .active span, .fp-slidesNav .active span{
-		background: #AAA;
-	}
-
 .mainImg {
-    height: 450px;
-    width:  450px;
+    height: 250px;
+    width:  250px;
 }
