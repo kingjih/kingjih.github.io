@@ -72,14 +72,13 @@ p{
 	text-align:center;
 }
 #menu li {
-  
 	display:inline-block;
-	margin: 5px;
-	background-color:#ccc;
-	
+	margin: 10px;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
 	-webkit-border-radius: 10px;
             border-radius: 10px;
-    
 }
 #menu li.active{
 	background:#666;
@@ -108,13 +107,12 @@ p{
 	position:fixed;
 	top:0;
 	left:0;
-	height: 70px;
+	height: 40px;
 	z-index: 70;
 	width: 100%;
 	padding: 0;
 	margin:0;
 }
-
 
 
 
