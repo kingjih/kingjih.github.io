@@ -186,9 +186,54 @@ p{
     position: relative;
     }
     
-
-
 .mainImg {
-    height: 250px;
-    width:  250px;
+    height: 100px;
+    width:  100px;
+}
+
+.content{
+    position: relative;
+    top: 50px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+}
+.wrap-left{
+    position: relative;
+    top: 0px;
+    height: 500px;
+    width: 50%;
+     float: left;
+    background-color: coral;
+}
+.wrap-right{
+     position: relative;
+     top: 0px;
+     height: 500px;
+     width: 50%;
+     float: left;
+     background-color:aquamarine;
+}
+.wrap-top{
+     position: relative;
+     top: 0px;
+     height: 50%;
+     width: 100%;
+     float: left;
+     background-color:cadetblue;
+    
+}
+.wrap-bot{
+     position: relative;
+     bottom: 0px;
+     height: 50%;
+     width: 100%;
+     float: left;
+     background-color:firebrick;
+}
+.bigfan{
+    height: 350px;
+    width: auto;
+    margin-bottom: 20px;
 }
