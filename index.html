@@ -21,16 +21,25 @@
     <script type="text/javascript" src="js/scrolloverflow.js"></script>
 	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
 	<script type="text/javascript" src="js/examples.js"></script>
+	
+    <!-- 最新編譯和最佳化的 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- 選擇性佈景主題 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <!-- 最新編譯和最佳化的 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
 </head>
 <body>
-<!--['homepage', 'intro', 'compare', 'AC', 'DC','Q&A'],-->
+<!--['homepage', 'intro', 'production', 'compare', 'QA','contact'],-->
+
 <ul id="menu">
     <li ><a href="http://www.kingjih.com">官方網站</a></li>
     <li data-menuanchor="second" class="active"><a href="#intro">介紹</a></li>
-	<li data-menuanchor="3th"><a href="#compare">型號比較</a></li>
-	<li data-menuanchor="4th"><a href="#AC"></a>AC</li>
-	<li data-menuanchor="5th"><a href="#DC">常見Q & A</a></li>
-	<li data-menuanchor="last"><a href="#Q&A">聯絡方式</a></li>
+	<li data-menuanchor="3th"><a href="#production">型號</a></li>
+	<li data-menuanchor="4th"><a href="#compare">型號比較</a></li>
+	<li data-menuanchor="5th"><a href="#QA">常見問題</a></li>
+	<li data-menuanchor="last"><a href="#contact">聯絡方式</a></li>
 </ul>
 
 <div id="fullpage">
@@ -41,8 +50,12 @@
    <div class="section" id="section1">
 		<div class="intro">
         <img src="imgs/logo.png" class="mainImg" alt="">
-		    <h1>技術介紹</h1>
-			<iframe width="70%" height="450px" src="https://www.youtube.com/embed/M9z_6Wc2sow" frameborder="0" allowfullscreen></iframe>
+            <!-- youtube iframe  -->
+                <!-- 4:3 aspect ratio -->
+            <div class="embed-responsive embed-responsive-4by3">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/M9z_6Wc2sow"></iframe>
+            </div>
+
 		</div>
 	</div>
 	
@@ -113,13 +126,30 @@
            
            <div class="content">
                <h2>ＡＣ極美高貴款</h2>
-        	    <img src="imgs/KDS-141SR-C2.png"  class="bigfan"alt="">
-        	   <ul class="fansli">
-        	       <li>型號：KDS-141SR</li>
-        	       <li>ＤＣ超省電，可遙控，九段變速</li>
-        	       <li>底盤特殊加厚，電鍍超高質感</li>
-        	       <li><a href="http://www.kingjih.com/tw/product/1.php?num=63&page=1">購買網址</a></li>
-        	   </ul>
+        	        <img src="imgs/KDS-141SR-C2.png"  class="bigfan"alt="">
+        	         <div class="panel panel-default">
+                          <!-- Default panel contents -->
+                          <div class="panel-heading">Panel heading</div>
+
+                          <!-- Table -->
+                          <table class="table">
+                          <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td> 
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr>
+                          </table>
+                        </div>
         	</div>
            
         </div>
@@ -129,10 +159,13 @@
 <!--	-->
 <div class="section" id="section5">
 		<div class="intro">
-			<h1>常見Q & A </h1>
+			<h1>聯絡我們</h1>
 			<p><i class="fa fa-phone fa-2x" aria-hidden="true"> </i> 04-2537-9612  </p>
+			<p><i class="fa fa-location-arrow fa-2x" aria-hidden="true"></i>台中市潭子區潭陽里福潭路402號</p>
 			
+<!--			
 			<p><div class="fb-page" data-href="https://www.facebook.com/kingjihfans/" data-tabs="timeline" data-width="500" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/kingjihfans/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/kingjihfans/">中央牌家電</a></blockquote></div>/</p>
+-->
 		</div>
 	</div>
     </div>
